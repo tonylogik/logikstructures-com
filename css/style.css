@@ -22,8 +22,8 @@
 
   --radius:       6px;
   --radius-lg:    12px;
-  --gap:          clamp(1rem, 3vw, 2rem);
-  --section-pad:  clamp(4rem, 8vw, 7rem);
+  --gap:          clamp(0.75rem, 2vw, 1.5rem);
+  --section-pad:  clamp(1.75rem, 3.5vw, 3rem);
   --nav-h:        72px;
 
   --ease-out:     cubic-bezier(0.22, 1, 0.36, 1);
@@ -241,7 +241,7 @@ p  { color: var(--text-muted); line-height: 1.75; }
 /* === HERO (Home) =========================================== */
 .hero {
   position: relative;
-  min-height: 100vh;
+  min-height: 60vh;
   display: flex;
   align-items: center;
   overflow: hidden;
@@ -361,7 +361,7 @@ p  { color: var(--text-muted); line-height: 1.75; }
 /* === PAGE HERO (Inner Pages) ============================== */
 .page-hero {
   position: relative;
-  padding: calc(var(--nav-h) + 4rem) 0 4rem;
+  padding: calc(var(--nav-h) + 2rem) 0 2.5rem;
   overflow: hidden;
 }
 .page-hero::before {
@@ -1070,6 +1070,7 @@ footer {
 
 @media (max-width: 768px) {
   :root { --nav-h: 64px; }
+  .hero { min-height: 45vh; }
 
   .nav-menu {
     display: none;
@@ -1104,6 +1105,7 @@ footer {
 }
 
 @media (max-width: 480px) {
+  .hero { min-height: 38vh; }
   .projects-grid { grid-template-columns: 1fr; }
   .stats-inner { grid-template-columns: 1fr 1fr; }
   .stat-item::after { display: none !important; }
