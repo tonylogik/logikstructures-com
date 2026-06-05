@@ -46,6 +46,13 @@
         window.location.href = href;
       }, 280);
     });
+
+    // Restore interactivity if page is restored from bfcache
+    window.addEventListener('pageshow', function (e) {
+      if (e.persisted) {
+        document.body.classList.remove('is-exiting');
+      }
+    });
   }
 
   /* ── 3D CARD TILT ─────────────────────────────────────────── */

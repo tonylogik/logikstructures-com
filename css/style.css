@@ -564,7 +564,6 @@ p  { color: var(--text-muted); line-height: 1.75; }
   border-radius: var(--radius-lg);
   overflow: hidden;
   border: 1px solid var(--border);
-  transition: transform 0.25s var(--ease-out), box-shadow 0.25s, border-color 0.25s;
   cursor: pointer;
   text-decoration: none;
   display: block;
