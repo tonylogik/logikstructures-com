@@ -33,9 +33,13 @@
       if (href.startsWith('mailto') || href.startsWith('tel')) return;
       if (a.target === '_blank') return;
       if (a.hasAttribute('download')) return;
-      // Skip truly external links
-      if (href.startsWith('http') && !href.startsWith(window.location.origin)) return;
+      // Skip truly external links (URL parse handles file://, protocol-relative, etc.)
+      try {
+        var url = new URL(href, window.location.href);
+        if (url.origin !== window.location.origin) return;
+      } catch (_) { return; }
 
+      if (e.ctrlKey || e.metaKey || e.shiftKey || e.altKey) return;
       e.preventDefault();
       document.body.classList.add('is-exiting');
       setTimeout(function () {
