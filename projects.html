@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Projects — Logik Structures, Inc.</title>
+  <meta name="description" content="Browse the complete project portfolio of Logik Structures — structural engineering for single-family, multi-family, commercial, and tenant improvement projects across Southern California.">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<!-- NAV -->
+<nav id="site-nav" class="scrolled">
+  <div class="container">
+    <div class="nav-inner">
+      <a href="index.html" class="nav-logo">
+        <img src="uploads/9/7/6/5/9765166/1434653578.png" alt="Logik Structures">
+        <span class="nav-logo-text">LOGIK</span>
+      </a>
+      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
+        <span></span><span></span><span></span>
+      </button>
+      <div class="nav-menu" id="nav-menu">
+        <a href="index.html" class="nav-link">Home</a>
+        <a href="about.html" class="nav-link">About</a>
+        <a href="services.html" class="nav-link">Services</a>
+        <a href="projects.html" class="nav-link">Projects</a>
+        <a href="contact.html" class="nav-link nav-cta">Contact</a>
+      </div>
+    </div>
+  </div>
+</nav>
+
+<!-- PAGE HERO -->
+<section class="page-hero">
+  <div class="container">
+    <div class="page-hero-content">
+      <span class="label">Portfolio</span>
+      <h1>Our Work</h1>
+      <p class="lead">37+ completed projects across Southern California — single-family residences, multi-family developments, commercial buildings, and tenant improvements.</p>
+    </div>
+  </div>
+</section>
+
+<!-- PROJECTS FILTER + GRID -->
+<section class="section">
+  <div class="container">
+    <div class="filter-bar reveal">
+      <button class="filter-btn active" data-filter="all">All Projects</button>
+      <button class="filter-btn" data-filter="single-family">Single-Family</button>
+      <button class="filter-btn" data-filter="multi-family">Multi-Family</button>
+      <button class="filter-btn" data-filter="commercial">Commercial</button>
+      <button class="filter-btn" data-filter="tenant-improvement">Tenant Improvement</button>
+    </div>
+    <div class="projects-full-grid" id="project-grid"></div>
+  </div>
+</section>
+
+<!-- CTA BAND -->
+<section class="cta-band">
+  <div class="container">
+    <div class="cta-band-content reveal">
+      <span class="label" style="display:block;margin-bottom:.75rem;text-align:center;">Work With Us</span>
+      <h2>Your Project Could Be Next</h2>
+      <p>We work with homeowners, developers, architects, and contractors across Southern California.</p>
+      <div class="btn-group">
+        <a href="contact.html" class="btn btn--primary">Start a Conversation <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
+        <a href="services.html" class="btn btn--outline">Explore Services</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer>
+  <div class="container">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <img src="uploads/9/7/6/5/9765166/1434653578.png" alt="Logik Structures">
+        <p>Professional structural engineering for Southern California's most ambitious projects. Built on precision. Driven by performance.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Navigation</h4>
+        <a href="about.html">About Us</a>
+        <a href="services.html">Services</a>
+        <a href="projects.html">Projects</a>
+        <a href="contact.html">Contact</a>
+      </div>
+      <div class="footer-col">
+        <h4>Services</h4>
+        <a href="services.html#new-construction">New Construction</a>
+        <a href="services.html#remodeling">Remodeling &amp; Renovation</a>
+        <a href="services.html#seismic">Seismic Retrofit</a>
+        <a href="services.html#shop-drawings">Shop Drawings</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <p>info@logikstructures.com</p>
+        <p>213-915-4119</p>
+        <p>Los Angeles, CA</p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <p>&copy; 2025 Logik Structures, Inc. All rights reserved.</p>
+      <p>Structural Engineering &amp; Consulting — Southern California</p>
+    </div>
+  </div>
+</footer>
+
+<script src="data/projects.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>
