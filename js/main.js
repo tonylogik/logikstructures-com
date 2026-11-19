@@ -9,6 +9,16 @@
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const url = (p) => 'project-detail.html?id=' + encodeURIComponent(p.id);
 
+  /* Contact details are assembled here, never written whole in the page source,
+     so address-harvesting bots that read raw HTML or JS find nothing to match. */
+  const EMAIL = ['info', ['logikstructures', 'com'].join('.')].join(String.fromCharCode(64));
+  const TEL = ['213', '915', '4119'];
+  document.querySelectorAll('[data-c]').forEach((a) => {
+    const e = a.dataset.c === 'e';
+    a.textContent = e ? EMAIL : TEL.join('-');
+    a.href = (e ? 'mai' + 'lto:' : 'te' + 'l:+1') + (e ? EMAIL : TEL.join(''));
+  });
+
   /* Mobile menu */
   const btn = $('.menu-btn'), nav = $('.nav');
   if (btn && nav) {
@@ -124,8 +134,8 @@
       e.preventDefault();
       const f = new FormData(form), g = (k) => (f.get(k) || '').toString().trim();
       const body = [g('message'), '', '—'].concat(['Name: ' + g('name'), 'Email: ' + g('email'), g('phone') && 'Phone: ' + g('phone'), g('address') && 'Site: ' + g('address'), 'Scope: ' + g('scope'), 'I am: ' + g('role')].filter(Boolean)).join('\n');
-      location.href = 'mailto:info@logikstructures.com?subject=' + encodeURIComponent('Project inquiry — ' + (g('scope') || 'Structural engineering') + (g('address') ? ' — ' + g('address') : '')) + '&body=' + encodeURIComponent(body);
-      const note = $('#rfi-note'); if (note) note.textContent = 'Your mail app should now be open with the request filled in — press send there. If nothing opened, write to info@logikstructures.com.';
+      location.href = 'mailto:' + EMAIL + '?subject=' + encodeURIComponent('Project inquiry — ' + (g('scope') || 'Structural engineering') + (g('address') ? ' — ' + g('address') : '')) + '&body=' + encodeURIComponent(body);
+      const note = $('#rfi-note'); if (note) note.textContent = 'Your mail app should now be open with the request filled in — press send there. If nothing opened, write to ' + EMAIL + '.';
     });
   }
 
