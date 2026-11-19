@@ -9,14 +9,27 @@
   const esc = (s) => String(s == null ? '' : s).replace(/[&<>"]/g, (c) => ({ '&': '&amp;', '<': '&lt;', '>': '&gt;', '"': '&quot;' }[c]));
   const url = (p) => 'project-detail.html?id=' + encodeURIComponent(p.id);
 
-  /* Contact details are assembled here, never written whole in the page source,
-     so address-harvesting bots that read raw HTML or JS find nothing to match. */
+  /* Contact details never appear in the page source. They are assembled from
+     fragments and only written into the page after a real visitor interacts
+     (moves, taps, scrolls or types), so crawlers that just load or render the
+     page find nothing to harvest. */
   const EMAIL = ['info', ['logikstructures', 'com'].join('.')].join(String.fromCharCode(64));
   const TEL = ['213', '915', '4119'];
-  document.querySelectorAll('[data-c]').forEach((a) => {
-    const e = a.dataset.c === 'e';
-    a.textContent = e ? EMAIL : TEL.join('-');
-    a.href = (e ? 'mai' + 'lto:' : 'te' + 'l:+1') + (e ? EMAIL : TEL.join(''));
+  const SIGNS = ['pointermove', 'pointerdown', 'touchstart', 'keydown', 'scroll'];
+  let shown = false;
+  const reveal = () => {
+    if (shown) return;
+    shown = true;
+    SIGNS.forEach((s) => removeEventListener(s, reveal));
+    document.querySelectorAll('[data-c]').forEach((a) => {
+      const e = a.dataset.c === 'e';
+      a.textContent = e ? EMAIL : TEL.join('-');
+      a.href = (e ? 'mai' + 'lto:' : 'te' + 'l:+1') + (e ? EMAIL : TEL.join(''));
+    });
+  };
+  SIGNS.forEach((s) => addEventListener(s, reveal, { passive: true }));
+  document.addEventListener('click', (ev) => {
+    if (!shown && ev.target.closest('[data-c]')) { ev.preventDefault(); reveal(); }
   });
 
   /* Mobile menu */
