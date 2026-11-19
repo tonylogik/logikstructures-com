@@ -25,9 +25,9 @@ window.PROJECTS = [
     location: "Los Angeles, CA",
     architect: "Boshi Architects",
     description: "This project involved extending an existing residence while carving into the hillside below to create a new pool deck. LOGIK served as both structural and shoring engineer, designing the retaining systems and new structural additions in tandem — a coordination challenge that required careful sequencing of construction phases to protect the existing structure throughout.",
-    thumbnail: IMG + "belfast-2.png",
+    thumbnail: IMG + "belfast-2.webp",
     images: [
-      IMG + "belfast-2.png"
+      IMG + "belfast-2.webp"
     ]
   },
   {
@@ -38,9 +38,9 @@ window.PROJECTS = [
     location: "Los Angeles, CA",
     architect: "Gibbs Architects",
     description: "Two new custom residences on a challenging hillside lot in Los Angeles. LOGIK acted as both structural and shoring engineer, developing solutions for the steep site conditions that made grading and foundation work viable. The result: two fully permitted, structurally independent homes sharing a common hillside with a coordinated shoring strategy.",
-    thumbnail: IMG + "coronado-2.png",
+    thumbnail: IMG + "coronado-2.webp",
     images: [
-      IMG + "coronado-2.png"
+      IMG + "coronado-2.webp"
     ]
   },
   {
@@ -51,9 +51,9 @@ window.PROJECTS = [
     location: "Los Angeles, CA",
     architect: "And and and Studio",
     description: "A contemporary single-family residence developed in close collaboration with And and and Studio. LOGIK provided the full structural engineering package, coordinating structural systems with the project's clean, geometric architectural language to deliver a home that is as well-built as it is well-designed.",
-    thumbnail: IMG + "guthrie-1.png",
+    thumbnail: IMG + "guthrie-1.webp",
     images: [
-      IMG + "guthrie-1.png"
+      IMG + "guthrie-1.webp"
     ]
   },
   {
@@ -63,9 +63,9 @@ window.PROJECTS = [
     categoryLabel: "Single-Family",
     location: "Los Angeles, CA",
     description: "A single-family residence in Los Angeles, structurally engineered by LOGIK with a focus on efficient framing that supports the architectural vision while remaining buildable within the project's timeline and budget.",
-    thumbnail: IMG + "triunfo-3.png",
+    thumbnail: IMG + "triunfo-3.webp",
     images: [
-      IMG + "triunfo-3.png",
+      IMG + "triunfo-3.webp",
       IMG + "published/triunfo-2.png"
     ]
   },
@@ -76,9 +76,9 @@ window.PROJECTS = [
     categoryLabel: "Single-Family",
     location: "Los Angeles, CA",
     description: "A new custom residence designed for an infill lot. LOGIK provided comprehensive structural engineering services, optimizing the gravity and lateral systems to work within the site's constraints while meeting all code requirements for the Southern California region.",
-    thumbnail: IMG + "lot-5-4.png",
+    thumbnail: IMG + "lot-5-4.webp",
     images: [
-      IMG + "lot-5-4.png"
+      IMG + "lot-5-4.webp"
     ]
   },
   {
@@ -88,9 +88,9 @@ window.PROJECTS = [
     categoryLabel: "Single-Family",
     location: "Los Angeles, CA",
     description: "A refined single-family residence in the Crescent Heights neighborhood. LOGIK delivered structural engineering services that enabled the design team to achieve their architectural vision with a structurally robust and code-compliant solution.",
-    thumbnail: IMG + "crescent-height-1.png",
+    thumbnail: IMG + "crescent-height-1.webp",
     images: [
-      IMG + "crescent-height-1.png"
+      IMG + "crescent-height-1.webp"
     ]
   },
   {
@@ -148,9 +148,9 @@ window.PROJECTS = [
     categoryLabel: "Single-Family",
     location: "Los Angeles, CA",
     description: "A new single-family residence with LOGIK-engineered structural systems designed to work with the building's layout and the site's conditions. Delivered on schedule and within the project's scope.",
-    thumbnail: IMG + "broadview2-1.png",
+    thumbnail: IMG + "broadview2-1.webp",
     images: [
-      IMG + "broadview2-1.png"
+      IMG + "broadview2-1.webp"
     ]
   },
   {
@@ -221,9 +221,9 @@ window.PROJECTS = [
     categoryLabel: "Multi-Family",
     location: "West Hollywood, CA",
     description: "A multi-family residential development in the heart of West Hollywood. LOGIK engineered the building's structural system to maximize livable square footage and rooftop programming while satisfying the exacting seismic performance requirements of the Los Angeles region. The project balances structural efficiency with the cost-consciousness every developer needs.",
-    thumbnail: IMG + "west-knoll-3.png",
+    thumbnail: IMG + "west-knoll-3.webp",
     images: [
-      IMG + "west-knoll-3.png"
+      IMG + "west-knoll-3.webp"
     ]
   },
   {
@@ -233,9 +233,9 @@ window.PROJECTS = [
     categoryLabel: "Multi-Family",
     location: "Los Angeles, CA",
     description: "A new multi-family residential building in Los Angeles, structurally engineered by LOGIK to support the building's open-plan unit layouts and shared amenity spaces. The project required careful coordination of the structural grid with the architectural floor plan to deliver the maximum rentable area per floor.",
-    thumbnail: IMG + "27thstreet2.png",
+    thumbnail: IMG + "27thstreet2.webp",
     images: [
-      IMG + "27thstreet2.png"
+      IMG + "27thstreet2.webp"
     ]
   },
   {
@@ -245,9 +245,9 @@ window.PROJECTS = [
     categoryLabel: "Multi-Family",
     location: "Los Angeles, CA",
     description: "A multi-family residential development where LOGIK provided structural engineering for new construction. The project involved a multi-story wood-framed structure designed with both cost efficiency and long-term performance in mind, meeting all current CBC requirements.",
-    thumbnail: IMG + "st-andrews-2.png",
+    thumbnail: IMG + "st-andrews-2.webp",
     images: [
-      IMG + "st-andrews-2.png"
+      IMG + "st-andrews-2.webp"
     ]
   },
   {
@@ -257,9 +257,9 @@ window.PROJECTS = [
     categoryLabel: "Multi-Family",
     location: "Los Angeles, CA",
     description: "A new apartment building where LOGIK engineered the structural systems to efficiently satisfy both the unit density goals of the developer and the seismic performance requirements of the jurisdiction. The project represents LOGIK's strength in multi-family residential construction.",
-    thumbnail: IMG + "ramsgate-2.png",
+    thumbnail: IMG + "ramsgate-2.webp",
     images: [
-      IMG + "ramsgate-2.png"
+      IMG + "ramsgate-2.webp"
     ]
   },
   /* ── COMMERCIAL ────────────────────────────────────────── */
