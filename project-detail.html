@@ -1,129 +1,60 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Project — Logik Structures, Inc.</title>
-  <meta name="description" content="Project details — Logik Structures, Inc. structural engineering.">
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@600;700;800&family=Inter:wght@400;500;600&display=swap" rel="stylesheet">
-  <link rel="stylesheet" href="css/style.css">
-  <script src="js/site/effects.js?v=2" defer></script>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Project — Logik Structures, Inc.</title>
+<meta name="description" content="Structural engineering project by Logik Structures, Inc., Los Angeles.">
+<meta property="og:title" content="Project — Logik Structures, Inc.">
+<meta property="og:description" content="Structural engineering project by Logik Structures, Inc., Los Angeles.">
+<meta property="og:image" content="uploads/9/7/6/5/9765166/15-entrada-a7r0885-pano-v2-y.jpg">
+<meta property="og:type" content="website">
+<meta name="color-scheme" content="light dark">
+<link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 26 26'%3E%3Crect width='26' height='26' fill='%23f2efe7'/%3E%3Crect x='2.5' y='2.5' width='21' height='21' fill='none' stroke='%2316181b' stroke-width='2'/%3E%3Cpath d='M2.5 23.5l21-21M2.5 2.5l21 21' stroke='%23d2331c' stroke-width='2'/%3E%3C/svg%3E">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Archivo:wdth,wght@62..125,400..800&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="css/style.css?v=3">
 </head>
 <body>
-
-<!-- NAV -->
-<nav id="site-nav" class="scrolled">
-  <div class="container">
-    <div class="nav-inner">
-      <a href="index.html" class="nav-logo">
-        <img src="uploads/9/7/6/5/9765166/1434653578.png" alt="Logik Structures">
-        <span class="nav-logo-text">LOGIK</span>
-      </a>
-      <button class="nav-toggle" id="nav-toggle" aria-label="Open menu">
-        <span></span><span></span><span></span>
-      </button>
-      <div class="nav-menu" id="nav-menu">
-        <a href="index.html" class="nav-link">Home</a>
-        <a href="about.html" class="nav-link">About</a>
-        <a href="services.html" class="nav-link">Services</a>
-        <a href="projects.html" class="nav-link">Projects</a>
-        <a href="contact.html" class="nav-link nav-cta">Contact</a>
-      </div>
+<header class="top">
+  <div class="wrap">
+    <a class="brand" href="index.html" aria-label="Logik Structures — home"><svg viewBox="0 0 26 26" fill="none" aria-hidden="true"><rect x="1.5" y="1.5" width="23" height="23" stroke="currentColor" stroke-width="2"/><path d="M1.5 24.5 24.5 1.5M1.5 1.5l23 23" stroke="#d2331c" stroke-width="2"/></svg><b>LOGIK</b><span>Structures, Inc.</span></a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="nav">Menu</button>
+    <nav class="nav" id="nav" aria-label="Primary"><a href="services.html">Services</a><a href="projects.html" aria-current="page">Projects</a><a href="about.html">About</a><a class="cta" href="contact.html">Start a project</a></nav>
+    <span class="sheet-no" title="Sheet number">S-300</span>
+  </div>
+</header>
+<main>
+<div id="project"></div>
+<section class="close">
+  <div class="wrap row">
+    <div><span class="tag">Similar problem?</span><h2 style="margin-top:16px">Let's look at <em>yours</em>.</h2></div>
+    <div>
+      <a class="big" href="mailto:info@logikstructures.com">info@logikstructures.com</a>
+      <a class="big" href="tel:+12139154119">213-915-4119</a>
+      <div class="btns"><a class="btn" href="contact.html">Start a project <i>→</i></a></div>
     </div>
   </div>
-</nav>
-
-<!-- PROJECT DETAIL (rendered by JS) -->
-<div id="project-detail-root">
-
-  <!-- Hero Image -->
-  <img id="project-hero-img" class="project-detail-hero" src="" alt="" width="1280" height="600">
-
-  <!-- Content -->
-  <div class="project-detail-content">
-    <div class="container">
-      <div class="project-detail-header reveal">
-        <span id="project-cat-tag" class="project-cat-tag"></span>
-        <h1 id="project-name"></h1>
-        <div id="project-meta-row" class="project-meta-row"></div>
+</section>
+</main>
+<footer class="tb">
+  <div class="wrap">
+    <div class="tb-grid">
+      <div class="logo">
+        <img src="uploads/9/7/6/5/9765166/1434653578.png" alt="Logik Structures, Inc. — where enduring &amp; cost-effective structures meet intriguing &amp; sustainable designs" width="608" height="80">
+        <p class="muted">Structural engineering &amp; consulting for Southern California — homes, housing, workplaces and schools.</p>
       </div>
-
-      <div class="grid grid--2" style="gap:clamp(2rem,5vw,5rem);align-items:start;">
-        <div>
-          <div id="project-gallery" class="project-gallery stagger"></div>
-        </div>
-        <div class="reveal-right">
-          <span class="label" style="display:block;margin-bottom:.75rem;">Project Description</span>
-          <p id="project-description" class="project-description"></p>
-          <div style="margin-top:2rem;">
-            <a href="contact.html" class="btn btn--primary">Work With Us <svg class="btn-arrow" width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M5 12h14M12 5l7 7-7 7"/></svg></a>
-          </div>
-        </div>
-      </div>
-
-      <div class="project-nav-bar reveal">
-        <a href="projects.html" class="back-link">
-          <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M19 12H5M12 5l-7 7 7 7"/></svg>
-          All Projects
-        </a>
-        <a href="contact.html" class="btn btn--outline btn--sm">Start Your Project</a>
-      </div>
-    </div>
-  </div>
-
-</div>
-
-<!-- LIGHTBOX -->
-<div id="lightbox" class="lightbox-overlay" role="dialog" aria-modal="true" aria-label="Image viewer">
-  <button class="lightbox-close" aria-label="Close">&times;</button>
-  <button class="lightbox-nav lightbox-prev" aria-label="Previous">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M15 18l-6-6 6-6"/></svg>
-  </button>
-  <img class="lightbox-img" src="" alt="Project image">
-  <button class="lightbox-nav lightbox-next" aria-label="Next">
-    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5"><path d="M9 18l6-6-6-6"/></svg>
-  </button>
-</div>
-
-<!-- FOOTER -->
-<footer>
-  <div class="container">
-    <div class="footer-grid">
-      <div class="footer-brand">
-        <img src="uploads/9/7/6/5/9765166/1434653578.png" alt="Logik Structures">
-        <p>Professional structural engineering for Southern California's most ambitious projects. Built on precision. Driven by performance.</p>
-      </div>
-      <div class="footer-col">
-        <h4>Navigation</h4>
-        <a href="about.html">About Us</a>
-        <a href="services.html">Services</a>
-        <a href="projects.html">Projects</a>
-        <a href="contact.html">Contact</a>
-      </div>
-      <div class="footer-col">
-        <h4>Services</h4>
-        <a href="services.html#new-construction">New Construction</a>
-        <a href="services.html#remodeling">Remodeling &amp; Renovation</a>
-        <a href="services.html#seismic">Seismic Retrofit</a>
-        <a href="services.html#shop-drawings">Shop Drawings</a>
-      </div>
-      <div class="footer-col">
-        <h4>Contact</h4>
-        <p>info@logikstructures.com</p>
-        <p>213-915-4119</p>
-        <p>Los Angeles, CA</p>
-      </div>
-    </div>
-    <div class="footer-bottom">
-      <p>&copy; 2025 Logik Structures, Inc. All rights reserved.</p>
-      <p>Structural Engineering &amp; Consulting — Southern California</p>
+      <div><span class="tag">Sheet index</span><a href="index.html">Home</a><a href="services.html">Services</a><a href="projects.html">Projects</a><a href="about.html">About</a><a href="contact.html">Contact</a></div>
+      <div><span class="tag">Scope</span><a href="services.html#new-construction">New construction</a><a href="services.html#remodeling">Remodel &amp; addition</a><a href="services.html#seismic">Seismic retrofit</a><a href="services.html#shop-drawings">Shop drawings</a></div>
+      <div><span class="tag">Contact</span><a href="mailto:info@logikstructures.com">info@logikstructures.com</a><a href="tel:+12139154119">213-915-4119</a><p>Los Angeles, California</p></div>
+      <div><span class="tag">Sheet</span><p class="big">S-300</p></div>
+      <div><span class="tag">Scale</span><p>Not to scale.<br>Built to code.</p></div>
+      <div><span class="tag">Issued</span><p>&copy; 2026 Logik Structures, Inc.<br>Est. 2015</p></div>
     </div>
   </div>
 </footer>
-
 <script src="data/projects.js"></script>
-<script src="js/main.js"></script>
+<script src="js/main.js?v=3"></script>
 </body>
 </html>
